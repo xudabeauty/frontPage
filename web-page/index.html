@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		li {
+			list-style-type: none;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		/*top begin*/
+		
+		.top {
+			border: 1px solid #ececec;
+		}
+		
+		.top-center {
+			height: 30px;
+			width: 1200px;
+			margin: 0 auto;
+			font-size: 12px;
+			color: #666;
+			font-family: "微软雅黑", "宋体";
+		}
+		
+		.ship {
+			float: left;
+			height: 30px;
+			line-height: 30px;
+			border-bottom: 1px solid #FFFFFF;
+		}
+		
+		.nav-tabs {
+			float: right;
+		}
+		
+		.nav-tabs li {
+			float: left;
+			height: 30px;
+			line-height: 30px;
+		}
+		
+		.nav-tabs li a {
+			padding: 0 16px;
+		}
+		
+		.icon-down {
+			display: inline-block;
+			width: 11px;
+			height: 6px;
+			padding: 0 5px;
+			background: url(img/icons/jt_down.png) no-repeat center;
+		}
+		
+		b {
+			font-weight: normal;
+		}
+		/*header begin*/
+		
+		.header {
+			font-size: 12px;
+			color: #666666;
+			font-family: "微软雅黑", "宋体";
+		}
+		
+		.header-center {
+			width: 1200px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		
+		.h-left {
+			float: left;
+		}
+		
+		.h-left img {
+			margin: 28px 108px 22px 0
+		}
+		
+		.h-center {
+			float: left;
+			margin: 30px 0 0 10px;
+		}
+		
+		.search-wrapper {
+			overflow: hidden;
+			border: 1px solid #c5131e;
+		}
+		
+		.h-center input {
+			float: left;
+			border: none;
+			width: 418px;
+			height: 34px;
+		}
+		
+		.h-center span {
+			float: left;
+			width: 84px;
+			height: 34px;
+			background: #c5131e;
+			text-align: center;
+			line-height: 34px;
+			color: #FFFFFF;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		
+		.h-center p {
+			height: 16px;
+			line-height: 16px;
+			margin: 10px 0;
+		}
+		
+		.h-center p a {
+			padding: 0 10px;
+		}
+		
+		.h-right {
+			float: right;
+			margin-top: 34px;
+		}
+		
+		.mymyu {
+			float: left;
+			height: 30px;
+			line-height: 30px;
+			margin-left: 20px;
+			padding-left: 32px;
+			cursor: pointer;
+			border: 1px solid #efefef;
+			background: #f7f7f7 url(img/icons/shopcar_03.png) no-repeat 6px 6px;
+		}
+		
+		.sj-down {
+			width: 10px;
+			height: 6px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(img/icons/sj_06.png) no-repeat center;
+			padding: 0 5px;
+		}
+		
+		.shop-cart {
+			float: left;
+			height: 30px;
+			line-height: 30px;
+			margin-left: 20px;
+			padding-left: 32px;
+			cursor: pointer;
+			border: 1px solid #EFEFEF;
+			background: #f7f7f7 url(img/icons/shopcar_06.png) no-repeat 6px 6px;
+		}
+		
+		.sj-right {
+			width: 10px;
+			height: 6px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(img/icons/sj_03.png) no-repeat center;
+			padding: 0 5px;
+		}
+		/*nav begin*/
+		
+		.nav {
+			border-bottom: 2px solid #c5000c;
+		}
+		
+		.nav-center {
+			width: 1200px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		
+		.category {
+			float: left;
+			width: 194px;
+			height: 36px;
+			background-color: #c5000c;
+			text-align: left;
+			color: #FFFFFF;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 36px;
+			padding-left:16px;
+		}
+		
+		.nav-center ul {}
+		
+		.nav-center ul li {
+			float: left;
+			padding: 0 16px;
+			height: 36px;
+			line-height: 36px;
+			font-size: 12px;
+			font-weight: bold;
+		}
+		
+		/*content beging*/
+		.content-center{
+			width: 1200px;
+			overflow: hidden;
+			margin: 0 auto;
+			font-size: 12px;
+			font-family: "微软雅黑","宋体";
+			clear: both;
+		}
+		.c-left{
+			float: left;
+			background: #fff0f2;
+			width: 208px;
+			border: 1px solid #c5000c;
+			
+		}
+		.c-left ul{
+			clear: both;
+			height: 71px;
+			padding-left: 10px;
+			border-bottom: 1px solid #e8e8e8;
+		}
+		.c-left h3{
+			height: 14px;
+			color: ##010138;
+			padding: 14px 0 18px 0;
+			line-height: 14px;
+			font-weight:bolder;
+			font-size: 12px;
+		}
+		.c-left ul li>a{
+			margin-right: 14px;
+			color: #010138;
+		}
+		.c-left li{
+			float: left;
+		}
+		
+		.c-center{
+			float: left;
+			width: 696px;
+			margin: 12px 10px 0 9px;
+		}
+		.c-center a{
+		}
+		.c-center ul{
+			height: 203px;
+			border: 1px solid #eeeeee;
+		}
+		.c-c-bottm li{
+			float: left;
+			border-right: 1px solid #EEEEEE;
+		}
+		.c-c-bottm li:last-child{
+			border-right: none;
+		}
+		.c-right{
+			float: left;
+			border: 1px solid #efefef;
+			width: 273px;
+			font-size: 12px;
+			font-family: "微软雅黑","宋体";
+			margin-top: 12px;
+			height: 492px;
+			overflow: auto;
+		}
+		.c-right h1{
+			height: 34px;
+			line-height: 34px;
+			font-size: 14px;
+			padding: 0 9px;
+			border-bottom: 1px solid #EFEFEF;
+		}
+		.c-right ul{
+			padding: 10px 9px;
+		}
+		.c-right ul li{
+			margin-bottom: 18px;
+			height: 12px;
+			font-size: 12px;
+			color: rgb(102, 102, 102);
+			list-style-image: url(img/icons/icon_li_1_03.png);
+			line-height: 12px;
+			list-style-position: inside;
+		}
+		
+		.c-right ul li>a{
+			font-size: 12px;
+			color:rgb(102,102,102);;
+		}
+		
+		/*container begin*/
+		.container{
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.captial{
+			width: 1200px;
+			margin: 20px auto;
+			font-size: 12px;
+			color: rgb(102, 102, 102);
+		    overflow: hidden;
+		}
+		.captial li{
+			float: left;
+			height: 191px;
+			width: 288px;
+			margin-right: 12px;
+			margin-bottom: 1px;
+			background:url(img/p021.jpg) no-repeat center;
+			cursor: pointer;
+		}
+		.desc-text h1{
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 36px;
+		}
+		.desc-text h2{
+			font-size: 14px;
+			color: #ff003a;
+			margin: 8px 0;
+		}
+		
+		/*1f开始*/
+		   .f1-nav{
+		   	overflow: hidden;
+		   	
+		   }
+		   .f1-left{
+		   	float: left;
+		   }
+		   .f1-nav ul{
+		   	float: left;
+		   	width: 75px;
+		   	padding: 10px;
+		   }
+		   .f1-nav ul li>a{
+		   	font-size: 12px;
+		   	color: #666;
+		   	font-family: "微软雅黑","宋体";
+		   } 
+		   .f1-box{
+		   	overflow: hidden;
+		   }
+		   .f1-box h1{
+		   	height: 28px;
+		   	line-height: 18px;
+		   	padding: 8px 0;
+		   	font-size: 18px;
+		   	border-bottom: 2px solid #b4b4b4;
+		   }
+		   .f1-box table{
+		   	float: left;
+		   } 
+		   .f1 table td{
+		   	width: 167px;
+		   	height: 203px;
+		   	border-left: 1px solid #efefef;
+            border-bottom: 1px solid #efefef
+		   }
+		   .f1 table td a{
+		   	font-size: 12px;
+		   	font-family: "微软雅黑","宋体";
+		   	color: #666;
+		   }
+		   
+		   .f1 table td h2{
+		   	color: #ed0043;
+		   	font-size: 12px;
+		   	font-weight: normal;
+		   	margin: 0 auto;
+		   }
+		    .f1 table td div{
+		    	padding: 10px 15px;
+		    	height: 30px;
+		    	margin: 0 auto;
+		   }
+		   /*留言begin*/
+		  .message{
+		  	overflow: hidden;
+		  }
+		  .message h1{
+		  	height: 38px;
+		  	line-height: 38px;
+		  	border-bottom: 1px solid #EFEFEF;
+		  	background: #f4f4f4;
+		  	font-size: 14px;
+		  	padding: 14px;
+		  }
+		  .message img{
+		  	float: left;
+		  	width: 100px;
+		  	height: 100px;
+		  }
+		  .sunburn>div{
+		  	overflow: hidden;
+		  }
+		.sunburn{
+			float: left;
+			height: 327px;
+			width: 30%
+			border-right: 1px solid #EFEFEF;
+			font-size: 12px;
+			font-weight: normal;
+		}
+		.sunburn>div{
+			margin: 20px 10px;
+			overflow: hidden;
+		}
+		.explation{
+			margin-left: 110px;
+		}
+		.explation h2{
+			font-size: 12px;
+			font-weight: normal;
+			height: 30px;
+			line-height: 30px;
+			padding: 0 35px;
+			background: url(img/icons/icon_1_03.png) no-repeat left;
+		}
+		.explation p{
+			height: 44px;
+			margin: 8px 0;
+			padding: 5px;
+			background: #f8f8f8;
+			border-radius: 15px;
+		}
+		
+		 .user-message>div{
+		  	overflow: hidden;
+		  	height: 375;
+		  }
+		  
+		.user-message{
+			float: left;
+			height: 327px;
+			width: 50%;
+			border-right: 1px solid #EFEFEF;
+			font-size: 12px;
+			font-weight: normal;
+		}
+		.q-a-wrapper{
+			overflow: hidden;
+			font-size: 12px;
+			font-weight: normal;
+			margin: 6px 0;
+			border-bottom:1px dashed #EFEFEF;
+		}
+		.q-a{
+			/*position: relative;*/
+			float: left;
+			left: 70px;
+			
+			
+		}
+		.user-message img{
+			width: 70px;
+			height: 70px;
+		}
+		.user-message>div{
+			margin: 20px 10px;
+			overflow: hidden;
+		}
+		.question{
+			height: 22px;
+			padding: 0 22px;
+			background: url(img/icons/icon_1_10.png) no-repeat;
+		}
+		.answer{
+			height: 22px;
+			background: url(img/icons/icon_1_14.png) no-repeat;
+			padding: 0 22px;
+			
+		}
+		.apple{
+			width: 28.2%;;
+			height: 327px;
+			float: left;
+		}
+		.apple-wrapper{
+			overflow: hidden;
+			clear: both;
+			margin: 12px 0;
+		}
+		.apple img{
+			float: left;
+			width: 70px;
+			height: 70px;
+			background: #FFFFFF;
+		}
+		.apple{
+			float: left;
+		}
+		.apple-text{
+			height: 70px;
+			
+		}
+		.apple a{
+			font-size: 12px;
+			color: #666;
+		    font-family: "微软雅黑","宋体";
+		}
+		.apple h4{
+			font-size: 12px;
+			color: red;
+			font-family: "微软雅黑","宋体";
+			margin-top: 15px;
+		}
+		.footer{
+			width: 100%;
+			background: #eeeeee;
+		}
+		.footer-wrapper{
+			width: 100%;
+			background: #eeeeee;
+			
+		}
+		.footer-top{
+			border-bottom: 2px solid #ed0042;
+		}
+		.footer-top-center{
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.footer-top-center{
+			overflow: hidden;
+			height: 133px;
+		}
+		.footer-top-center>div{
+			float: left;
+			height: 133px;
+			line-height: 133px;
+			width: 25%;
+			text-align: center;
+		}
+		.quan{
+			background: url(img/icons/icon_1_17.png) no-repeat 21px center;
+		}
+		.you{
+			background: url(img/icons/icon_1_20.png) no-repeat 21px center;
+		}
+		.kuai{
+			background: url(img/icons/icon_1_23.png) no-repeat 21px center;
+		}
+		.le{
+			background: url(img/icons/icon_1_25.png) no-repeat 21px center;
+		}
+		.footer-main{
+			height: 236px;
+			background: #f4f4f4;
+		}
+		.footer-main-center{
+			width: 1000px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		
+		.list-wrapper{
+			width: 20%;
+			float: left;
+			padding-left: 50px;
+			margin-top: 30px;
+			background: url(img/icons/icon_1_32.png) no-repeat left center;
+		}
+		.list-wrapper h4{
+			font-size: 16px;
+			height: 30px;
+			line-height: 30px;
+			font-family: "微软雅黑","宋体";
+			color: #666;
+		}
+		.list-wrapper li{
+			height: 20px;
+			line-height: 20px;
+		}
+		.list-wrapper a{
+			font-size: 12px;
+			font-family: "微软雅黑","宋体";
+			color: #666;
+		}
+		.list-wrapper:last-child{
+			background: url(img/icons/icon_1_45.png) no-repeat left center;
+		}
+		.qrc-style{
+			position: relative;
+		}
+		.qrc {
+			
+			    position: absolute;
+                width: 40%;
+                top: 32px;
+                left: 139px;
+		}
+		
+		.footer-bottom{
+			height:90px ;
+			background: #f7f7f7 url(img/police.png) no-repeat left 45px;
+		}
+		.footer-bottom-wrapper{
+			font-size: 12px;
+			font-family: "微软雅黑","宋体";
+			color: #666666;
+			width: 1000px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		
+		.footer-bottom-wrapper ul{
+			overflow: hidden;
+			text-align: center;
+			margin-bottom: 5px;
+			padding-left: 268px;
+		}
+		.footer-bottom-wrapper ul li{
+			float: left;
+		}
+		.footer-bottom-wrapper ul li>a{
+			padding: 12px;
+			font-size: 12px;
+			font-family: "微软雅黑","宋体";
+			color: #666666;
+		}
+	
+
+	</style>
+
+	<body>
+		<div class="top">
+			<div class="top-center">
+				<div class="ship">
+					<span>送货至</span>
+					<b>浙江</b>
+					<span class="icon-down"></span>
+				</div>
+				<ul class="nav-tabs">
+					<li>
+						<a>退出</a> | </li>
+					<li>
+						<a>我的订单<span class="icon-down"></span></a> | </li>
+					<li>
+						<a>特色服务<span class="icon-down"></span></a> | </li>
+					<li>
+						<a>服务中心<span class="icon-down"></span></a> | </li>
+					<li>
+						<a>手机鱿鱼<span class="icon-down"></span></a> | </li>
+					<li>
+						<a>关注鱿鱼<span class="icon-down"></span></a> | </li>
+					<li>
+						<a>网站导航<span class="icon-down"></span></a> | </li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header">
+			<div class="header-center">
+				<a href="#" class="h-left">
+					<img src="img/logo.png" />
+				</a>
+				<div class="h-center">
+					<div class="search-wrapper">
+						<input type="text" /><span class="search-btn">搜索</span>
+					</div>
+					<p class="category-nav">
+						<a>iphone</a> |
+						<a>华为</a> |
+						<a>iphone</a> |
+						<a>OPPO</a> |
+						<a>苹果</a> |
+						<a>全球购</a> |
+					</p>
+				</div>
+				<div class="h-right">
+					<div class="mymyu">我的鱿鱼<span class="sj-down"></span></div>
+					<div class="shop-cart">去购物车结算<span class="sj-right"></span></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="nav">
+
+			<div class="nav-center">
+				<div class="category">全部商品分类</div>
+				<ul>
+					<li>
+						<a>二手良品</a>
+					</li>
+					<li>
+						<a>华为</a>
+					</li>
+					<li>
+						<a>OPPO</a>
+					</li>
+					<li>
+						<a>苹果</a>
+					</li>
+					<li>
+						<a>全球购</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content-center">
+			<div class="c-left">
+				<ul>
+					<h3>国产行货</h3>
+					<li><a>华为</a></li>
+					<li><a>小米</a></li>
+					<li><a>魅族</a></li>
+					<li><a>乐视</a></li>
+				</ul>
+				<ul>
+					<h3>国产行货</h3>
+					<li><a>华为</a></li>
+					<li><a>小米</a></li>
+					<li><a>魅族</a></li>
+					<li><a>乐视</a></li>
+				</ul>
+				<ul>
+					<h3>国产行货</h3>
+					<li><a>华为</a></li>
+					<li><a>小米</a></li>
+					<li><a>魅族</a></li>
+					<li><a>乐视</a></li>
+				</ul>
+				<ul>
+					<h3>国产行货</h3>
+					<li><a>华为</a></li>
+					<li><a>小米</a></li>
+					<li><a>魅族</a></li>
+					<li><a>乐视</a></li>
+				</ul>
+				<ul>
+					<h3>国产行货</h3>
+					<li><a>华为</a></li>
+					<li><a>小米</a></li>
+					<li><a>魅族</a></li>
+					<li><a>乐视</a></li>
+				</ul>
+				<ul>
+					<h3>国产行货</h3>
+					<li><a>华为</a></li>
+					<li><a>小米</a></li>
+					<li><a>魅族</a></li>
+					<li><a>乐视</a></li>
+				</ul>
+				<ul>
+					<h3>国产行货</h3>
+					<li><a>华为</a></li>
+					<li><a>小米</a></li>
+					<li><a>魅族</a></li>
+					<li><a>乐视</a></li>
+				</ul>
+			</div>
+			<div class="c-center">
+				<div class="c-c-top">
+					<a href="#">
+						<img src="img/ad1.png"/>
+					</a>
+				</div>
+				<ul class="c-c-bottm">
+					<li><a href="#"><img src="img/p01.jpg"/></a></li>
+					<li><a href="#"><img src="img/p01.jpg"/></a></li>
+					<li><a href="#"><img src="img/p01.jpg"/></a></li>
+				</ul>
+			</div>
+			<div class="c-right">
+				<h1 class="title">鱿鱼快报<a href="#">更多</a></h1>
+				<ul>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+					<li><a href="#">〈锤子〉与傲慢与偏执，回敬傲慢与偏见</a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	    <div class="container">
+	    	<div class="captial">
+	    		<ul>
+	    			<li>
+	    				<div class="desc-text">
+	    					<h1>苹果 6s Plus</h1>
+	    					<p>指间一按</p>
+	    					<h2>3D Touch</h2>
+	    					<h2>就能让你实现更多精彩</h2>
+	    					<p><a>更多爆价，点击进入</a></p>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div class="desc-text">
+	    					<h1>苹果 6s Plus</h1>
+	    					<p>指间一按</p>
+	    					<h2>3D Touch</h2>
+	    					<h2>就能让你实现更多精彩</h2>
+	    					<p><a>更多爆价，点击进入</a></p>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div class="desc-text">
+	    					<h1>苹果 6s Plus</h1>
+	    					<p>指间一按</p>
+	    					<h2>3D Touch</h2>
+	    					<h2>就能让你实现更多精彩</h2>
+	    					<p><a>更多爆价，点击进入</a></p>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div class="desc-text">
+	    					<h1>苹果 6s Plus</h1>
+	    					<p>指间一按</p>
+	    					<h2>3D Touch</h2>
+	    					<h2>就能让你实现更多精彩</h2>
+	    					<p><a>更多爆价，点击进入</a></p>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div class="desc-text">
+	    					<h1>苹果 6s Plus</h1>
+	    					<p>指间一按</p>
+	    					<h2>3D Touch</h2>
+	    					<h2>就能让你实现更多精彩</h2>
+	    					<p><a>更多爆价，点击进入</a></p>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div class="desc-text">
+	    					<h1>苹果 6s Plus</h1>
+	    					<p>指间一按</p>
+	    					<h2>3D Touch</h2>
+	    					<h2>就能让你实现更多精彩</h2>
+	    					<p><a>更多爆价，点击进入</a></p>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div class="desc-text">
+	    					<h1>苹果 6s Plus</h1>
+	    					<p>指间一按</p>
+	    					<h2>3D Touch</h2>
+	    					<h2>就能让你实现更多精彩</h2>
+	    					<p><a>更多爆价，点击进入</a></p>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div class="desc-text">
+	    					<h1>苹果 6s Plus</h1>
+	    					<p>指间一按</p>
+	    					<h2>3D Touch</h2>
+	    					<h2>就能让你实现更多精彩</h2>
+	    					<p><a>更多爆价，点击进入</a></p>
+	    				</div>
+	    			</li>
+	    		</ul>
+	    		
+	    	</div>
+	        <div class="f1">
+	        	<h1>1F国产行货</h1>
+	        	<div class="f1-left">
+	        	<div class="f1-nav">
+	        	<ul>
+	        		<li><a href="#">华为</a></li>
+	        		<li><a href="#">魅族</a></li>
+	        		<li><a href="#">华为</a></li>
+	        		<li><a href="#">华为</a></li>
+	        	</ul>
+	        	<ul>
+	        		<li><a href="#">华为</a></li>
+	        		<li><a href="#">华为</a></li>
+	        		<li><a href="#">魅族</a></li>
+	        		<li><a href="#">华为</a></li>
+	        	</ul>
+	        	</div>
+	        	<div class="f1-bottom">
+	        		<img src="img/f13.jpg" />
+	        	</div>
+	        	</div>
+	        	<div class="f1-box">
+	        		<table>
+	        			<tbody>
+	        				<tr>
+	        					<td>
+	        						<img src="img/f11.jpg" />
+	        						<div>
+	        							<p><a href="#">OPPO R9双卡双待 玫瑰金 64GB全球通</a></p>
+	        							<h2>￥2499</h2>
+	        						</div>
+	        					</td>
+	        					<td colspan="3">
+	        						<img src="img/f12.jpg" />
+	        					</td>
+	        					<td>
+	        						<img src="img/f11.jpg" />
+	        						<div>
+	        							<p><a href="#">OPPO R9双卡双待 玫瑰金 64GB全球通</a></p>
+	        							<h2>￥2499</h2>
+	        						</div>
+	        					</td>
+	        					<td>
+	        						<img src="img/f11.jpg" />
+	        						<div>
+	        							<p><a href="#">OPPO R9双卡双待 玫瑰金 64GB全球通</a></p>
+	        							<h2>￥2499</h2>
+	        						</div>
+	        					</td>
+	        				</tr>
+	        				<tr>
+	        					<td>
+	        						<img src="img/f11.jpg" />
+	        						<div>
+	        							<p><a href="#">OPPO R9双卡双待 玫瑰金 64GB全球通</a></p>
+	        							<h2>￥2499</h2>
+	        						</div>
+	        					</td>
+	        					<td>
+	        						<img src="img/f11.jpg" />
+	        						<div>
+	        							<p><a href="#">OPPO R9双卡双待 玫瑰金 64GB全球通</a></p>
+	        							<h2>￥2499</h2>
+	        						</div>
+	        					</td>
+	        					<td>
+	        						<img src="img/f11.jpg" />
+	        						<div>
+	        							<p><a href="#">OPPO R9双卡双待 玫瑰金 64GB全球通</a></p>
+	        							<h2>￥2499</h2>
+	        						</div>
+	        					</td>
+	        					<td>
+	        						<img src="img/f11.jpg" />
+	        						<div>
+	        							<p><a href="#">OPPO R9双卡双待 玫瑰金 64GB全球通</a></p>
+	        							<h2>￥2499</h2>
+	        						</div>
+	        					</td>
+	        					<td>
+	        						<img src="img/f11.jpg" />
+	        						<div>
+	        							<p><a href="#">OPPO R9双卡双待 玫瑰金 64GB全球通</a></p>
+	        							<h2>￥2499</h2>
+	        						</div>
+	        					</td>
+	        					<td>
+	        						<img src="img/f11.jpg" />
+	        						<div>
+	        							<p><a href="#">OPPO R9双卡双待 玫瑰金 64GB全球通</a></p>
+	        							<h2>￥2499</h2>
+	        						</div>
+	        					</td>
+	        				</tr>
+	        			</tbody>
+	        		</table>
+	        	</div>
+	        </div>
+	         <div class="message">
+	         	<div class="sunburn">
+	         		<h1>热门晒单</h1>
+	         		<div>
+	         			<img src="img/c3_b4_2.jpg"/>
+	         			<div class="explation">
+	         			<h2>简单传说</h2>
+	         			<p>"手机真的超级好用"</p>
+	         			</div>
+	         		</div>
+	         		<div>
+	         			<img src="img/c3_b4_1.jpg"/>
+	         			<div class="explation">
+	         			<h2>大漠孤狼</h2>
+	         			<p>"苹果笔记本也不错！"</p>
+	         			</div>
+	         		</div>
+	         	</div>
+	         	<div class="user-message">
+	         		<h1>用户留言</h1>
+	         		<div>
+         			<div class="q-a-wrapper">
+	         		<img src="img/c3_b4_2.jpg"/>
+	         		<div class="q-a">
+	         			<p  class="question">:手机怎么样</p>
+	         			<p class="answer">：手机真的超级好用，大赞</p>
+	         		</div>
+	         		</div>
+	         		<div class="q-a-wrapper">
+	         		<img src="img/c3_b4_1.jpg"/>
+	         		<div class="q-a"
+	         			<p  class="question">:手机怎么样</p>
+	         			<p class="answer">：手机真的超级好用，大赞</p>
+	         			</div>
+	         		</div>
+	         		<div class="q-a-wrapper">
+	         		<img src="img/c3_b4_1.jpg"/>
+	         		<div class="q-a">
+	         			<p  class="question">:手机怎么样</p>
+	         			<p class="answer">：手机真的超级好用，大赞</p>
+	         			</div>
+	         		</div>
+	         	</div>
+	         </div>
+	         <div class="apple">
+	         	<h1>苹果</h1>
+	         	<div class="apple-wrapper">
+	         		<img src="img/c3_b4_3.jpg"/>
+	         		<div class="apple-text">
+	         			<a>苹果（APPLE）iPhone 6s 深空灰 港版 64GB 移动/联通双4G</a>
+	         			<h4>￥5409</h4>
+	         		</div>
+	         	</div>
+	         		<div class="apple-wrapper">
+	         		<img src="img/c3_b4_3.jpg"/>
+	         		<div class="apple-text">
+	         			<a>苹果（APPLE）iPhone 6s 深空灰 港版 64GB 移动/联通双4G</a>
+	         			<h4>￥5409</h4>
+	         		</div>
+	         	</div>
+	         		<div class="apple-wrapper">
+	         		<img src="img/c3_b4_3.jpg"/>
+	         		<div class="apple-text">
+	         			<a></a>苹果（APPLE）iPhone 6s 深空灰 港版 64GB 移动/联通双4G</p>
+	         			<h4>￥5409</h4>
+	         		</div>
+	         	</div>
+	         </div>
+	    </div>
+	    </div>
+	      <div class="footer">
+	      	<div class="footer-wrapper">
+	      	<div class="footer-top">
+	      		<div class="footer-top-center">
+	      		<div class="quan">品目繁多 愉悦购物</div>
+	      		<div class="you">正品保障 天天底价</div>
+	      		<div class="kuai">急速物流 天天定制</div>
+	      		<div class="le">优质服务  以客为尊</div>
+	      		</div>
+	      	</div>
+	      	<div class="footer-main">
+	      		<div class="footer-main-center">
+	      			<div class="list-wrapper">
+	      				<h4>购物指南</h4>
+	      				<ul>
+	      					<li><a href="#">常见问题</a></li>
+	      					<li><a href="#">找回密码</a></li>
+	      					<li><a href="#">会员介绍</a></li>
+	      					<li><a href="#">购物演示</a></li>
+	      				</ul>
+	      			</div>
+	      				<div class="list-wrapper">
+	      				<h4>购物指南</h4>
+	      				<ul>
+	      					<li><a href="#">常见问题</a></li>
+	      					<li><a href="#">找回密码</a></li>
+	      					<li><a href="#">会员介绍</a></li>
+	      					<li><a href="#">购物演示</a></li>
+	      				</ul>
+	      			</div>
+	      				<div class="list-wrapper">
+	      				<h4>购物指南</h4>
+	      				<ul>
+	      					<li><a href="#">常见问题</a></li>
+	      					<li><a href="#">找回密码</a></li>
+	      					<li><a href="#">会员介绍</a></li>
+	      					<li><a href="#">购物演示</a></li>
+	      				</ul>
+	      			</div>
+	      			<div class="list-wrapper qrc-style">
+	      				<h4>客服中心</h4>
+	      				<img src="img/QRCodes.png" />
+	      				<p class="qrc" style="font-size: 12px; font-family: '微软雅黑';color: #666666;">抢红包、疑问咨询、优惠活动</p>
+	      			</div>
+	      		</div>
+	      	</div>
+	      	<div class="footer-bottom">
+	      		<div class="footer-bottom-center">
+	      			<div class="footer-bottom-wrapper">
+	      				<ul>
+	      					<li><a>关于我们</a>|</li>
+	      					<li><a>联系我们</a>|</li>
+	      					<li><a>友情链接</a>|</li>
+	      					<li><a>苹果电脑</a>|</li>
+	      					<li><a>二手良品</a>|</li>
+	      					<li><a>供应商入驻</a></li>
+	      				</ul>
+	      				<p>沪ICP备14033591号-8 鱿鱼youyu.com版权所有 亚松电子商务（上海）有限公司</p>
+	      			</div>
+	      		</div>
+	      	</div>
+	      </div>
+	      </div>
+	</body>
+
+</html>
